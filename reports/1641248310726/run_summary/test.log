@@ -1,0 +1,2 @@
+[2022-01-03 07:19:33] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-01-03 07:19:33] [IMessager.java] [1] [INFO] RESULT #1: TEST [gsm - verifyLoginWithEmptyEmail] PASS [screenshots=file:///Users/solvd/gsm/./reports/1641248310726/67720fbd-2cd2-4920-910c-342ae043e626/report.html | log=file:///Users/solvd/gsm/./reports/1641248310726/67720fbd-2cd2-4920-910c-342ae043e626/test.log]

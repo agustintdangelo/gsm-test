@@ -1,0 +1,2 @@
+[2022-01-03 06:20:03] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-01-03 06:20:03] [IMessager.java] [1] [INFO] RESULT #1: TEST [gsm - verifySpecificSearch] FAIL [screenshots=file:///Users/solvd/gsm/./reports/1641244774587/fd301bdd-422d-4290-b27d-44745be3f457/report.html | log=file:///Users/solvd/gsm/./reports/1641244774587/fd301bdd-422d-4290-b27d-44745be3f457/test.log]
