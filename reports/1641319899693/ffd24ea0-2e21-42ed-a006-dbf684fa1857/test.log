@@ -1,0 +1,13 @@
+[2022-01-04 03:12:14] [TestRunRegistrar.java] [16] [WARN] Reporting disabled: using no op test run registrar
+[2022-01-04 03:12:14] [IMessager.java] [16] [INFO] TEST [gsm [row=2] - verifyWelcomeMessageSignUp [L0002]] STARTED at [15:12:14 2022-01-04]
+[2022-01-04 03:12:29] [DriverListener.java] [16] [INFO] PASS: element 'signUpButton' is clicked.
+[2022-01-04 03:12:29] [DriverListener.java] [16] [INFO] PASS: keys cleared in element 'inputNickName'.
+[2022-01-04 03:12:30] [DriverListener.java] [16] [INFO] PASS: keys 'carlos19298370102' are sent to element 'inputNickName'.
+[2022-01-04 03:12:31] [DriverListener.java] [16] [INFO] PASS: keys cleared in element 'inputEmail'.
+[2022-01-04 03:12:31] [DriverListener.java] [16] [INFO] PASS: keys 'carlos019938187720@gmail.com' are sent to element 'inputEmail'.
+[2022-01-04 03:12:32] [DriverListener.java] [16] [INFO] PASS: keys cleared in element 'inputPassword'.
+[2022-01-04 03:12:32] [DriverListener.java] [16] [INFO] PASS: keys '8964763241' are sent to element 'inputPassword'.
+[2022-01-04 03:12:33] [DriverListener.java] [16] [INFO] PASS: element 'iAgreeButton1' is clicked.
+[2022-01-04 03:12:33] [DriverListener.java] [16] [INFO] PASS: element 'iAgreeButton2' is clicked.
+[2022-01-04 03:12:37] [DriverListener.java] [16] [INFO] PASS: element 'submitButton' is clicked.
+[2022-01-04 03:12:37] [IMessager.java] [16] [INFO] TEST [gsm [row=2] - verifyWelcomeMessageSignUp [L0002]] PASSED at [15:12:37 2022-01-04]

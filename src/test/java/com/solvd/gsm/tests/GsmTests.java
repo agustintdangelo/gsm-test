@@ -1,44 +1,51 @@
 package com.solvd.gsm.tests;
 
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
+import com.qaprosoft.carina.core.foundation.dataprovider.annotations.XlsDataSourceParameters;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.solvd.gsm.HomePage;
 import com.solvd.gsm.SearchPage;
 import com.solvd.gsm.SignUpPage;
-import com.solvd.gsm.services.HomePageServices;
-import com.solvd.gsm.services.SearchPageServices;
-import com.solvd.gsm.services.SignUpServices;
+import com.solvd.gsm.services.IHomePageServices;
+import com.solvd.gsm.services.ISearchPageServices;
+import com.solvd.gsm.services.ISignUpServices;
 import org.apache.commons.lang3.StringUtils;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import java.util.HashMap;
 import java.util.List;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
 
-public class GsmTests implements IAbstractTest, SignUpServices, HomePageServices, SearchPageServices {
-    @Test
-    public void verifyWelcomeMessageSignUp(){
-//        PostSignUpPage postSignUpPage = goToPostSignUpPageSuccessfully(getDriver());
-        SignUpPage signUpPage = goToSignUpPageSuccessfully(getDriver(), "nuevoNickname123.", "pepi_1_2@gmail.com", "password");
+public class GsmTests implements IAbstractTest, ISignUpServices, IHomePageServices, ISearchPageServices {
+
+    @Test(dataProvider = "DataProvider")
+    @XlsDataSourceParameters(path = "xlsx-files/users.xlsx", sheet = "Data", dsUid = "row")
+    public void verifyWelcomeMessageSignUp(HashMap<String, String> args){
+        SignUpPage signUpPage = goToSignUpPageSuccessfully(getDriver(), args);
         assertEquals(signUpPage.getAccountCreatedMessage(), "Your account was created.", "FATAL!, error");
     }
 
-    @Test
-    public void verifyInvalidEmail(){
-        SignUpPage signUpPage = goToSignUpPageWithInvalidEmail(getDriver(), "ed90gardo12", "invalidemail@e","password");
-        assertEquals(signUpPage.getInvalidEmailMessage(),"Reason: You need to provide valid email. invalidemail@o","FATAL!, error");
+    @Test(dataProvider = "DataProvider")
+    @XlsDataSourceParameters(path = "xlsx-files/users.xlsx", sheet = "Data", dsUid = "row")
+    public void verifyInvalidEmail(HashMap<String, String> args){
+        SignUpPage signUpPage = goToSignUpPageWithInvalidEmail(getDriver(), args);
+        assertEquals(signUpPage.getInvalidEmailMessage(),"Reason: You need to provide valid email. invalidemail@a","FATAL!, error");
     }
 
-    @Test
-    public void verifyEmptyNameNotAllowed(){
-        SignUpPage signUpPage = goToSignUpPageWithEmptyNickname(getDriver(), "ji89asd87@gmail.com", "password");
+    @Test(dataProvider = "DataProvider")
+    @XlsDataSourceParameters(path = "xlsx-files/users.xlsx", sheet = "Data", dsUid = "row")
+    public void verifyEmptyNameNotAllowed(HashMap<String, String> args){
+        SignUpPage signUpPage = goToSignUpPageWithEmptyNickname(getDriver(), args);
         assertEquals(signUpPage.getEmptyNicknameMessage(),"Reason: Your nickname should have between 2 and 20 symbols.","FATAL!, error, empty nicknames must be an error");
     }
 
-    @Test
-    public void verifyEmptyEmailNotAllowed(){
-        SignUpPage signUpPage = goToSignUpPageWithEmptyEmail(getDriver(), "est187buin21", "password");
+    @Test(dataProvider = "DataProvider")
+    @XlsDataSourceParameters(path = "xlsx-files/users.xlsx", sheet = "Data", dsUid = "row")
+    public void verifyEmptyEmailNotAllowed(HashMap<String, String> args){
+        SignUpPage signUpPage = goToSignUpPageWithEmptyEmail(getDriver(), args);
         assertFalse(signUpPage.isSubmitButtonClickable(), "FATAL!, The button is clickable, and it shouldn't be.");
     }
 

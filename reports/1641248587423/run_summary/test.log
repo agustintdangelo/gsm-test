@@ -1,2 +1,0 @@
-[2022-01-03 07:23:37] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
-[2022-01-03 07:23:37] [IMessager.java] [1] [INFO] RESULT #1: TEST [gsm - verifyLoginWithWrongEmail] FAIL [log=file:///Users/solvd/gsm/./reports/1641248587423/11812ab9-c1ae-4755-aa17-040a7860f9c3/test.log]
