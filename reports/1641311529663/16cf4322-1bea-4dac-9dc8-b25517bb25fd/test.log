@@ -1,0 +1,10 @@
+[2022-01-04 12:52:51] [CarinaListener.java] [14] [WARN] Trying to quit driver 'default' on shutdown hook action!
+[2022-01-04 12:52:51] [DriverListener.java] [14] [ERROR] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'solvds-MacBook-Pro.local', ip: 'fe80:0:0:0:c4e:6ec0:76be:bc70%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.1', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cb/_cgn98l156b...}, goog:chromeOptions: {debuggerAddress: localhost:53914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ab58861c2f6848c3c415387932aed33
+[2022-01-04 12:52:51] [Screenshot.java] [14] [ERROR] ExecutionException error detected on capture full screenshot!

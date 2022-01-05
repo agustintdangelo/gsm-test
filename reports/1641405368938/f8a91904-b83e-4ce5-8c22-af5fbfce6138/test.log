@@ -1,0 +1,35 @@
+[2022-01-05 02:56:36] [TestRunRegistrar.java] [16] [WARN] Reporting disabled: using no op test run registrar
+[2022-01-05 02:56:36] [IMessager.java] [16] [INFO] TEST [gsm [row=2] - verifyWelcomeMessageSignUp [L02]] STARTED at [14:56:36 2022-01-05]
+[2022-01-05 02:56:47] [DriverListener.java] [16] [INFO] PASS: element 'signUpButton' is clicked.
+[2022-01-05 02:56:47] [DriverListener.java] [16] [INFO] PASS: keys cleared in element 'inputNickName'.
+[2022-01-05 02:56:48] [DriverListener.java] [16] [INFO] PASS: keys 'carlos19298370102' are sent to element 'inputNickName'.
+[2022-01-05 02:56:48] [DriverListener.java] [16] [INFO] PASS: keys cleared in element 'inputEmail'.
+[2022-01-05 02:56:49] [DriverListener.java] [16] [INFO] PASS: keys 'carlos019938187720@gmail.com' are sent to element 'inputEmail'.
+[2022-01-05 02:56:49] [DriverListener.java] [16] [INFO] PASS: keys cleared in element 'inputPassword'.
+[2022-01-05 02:56:50] [DriverListener.java] [16] [INFO] PASS: keys '8964763241' are sent to element 'inputPassword'.
+[2022-01-05 02:56:50] [DriverListener.java] [16] [INFO] PASS: element 'iAgreeButton1' is clicked.
+[2022-01-05 02:56:51] [DriverListener.java] [16] [INFO] PASS: element 'iAgreeButton2' is clicked.
+[2022-01-05 02:56:51] [DriverListener.java] [16] [INFO] PASS: element 'submitButton' is clicked.
+[2022-01-05 02:57:12] [ExtendedWebElement.java] [16] [ERROR] FAIL: get_text - waitCondition for element 'accountCreatedMessage (By.xpath: //h3[text()='Your account was created. '])' not satisfied!
+[2022-01-05 02:57:14] [IMessager.java] [16] [ERROR] TEST [gsm [row=2] - verifyWelcomeMessageSignUp [L02]] FAILED at [14:57:14 2022-01-05] - Unable to detect element: accountCreatedMessage (By.xpath: //h3[text()='Your account was created. '])
+
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1416)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1363)
+com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement.getText(ExtendedWebElement.java:462)
+com.solvd.gsm.SignUpPage.getAccountCreatedMessage(SignUpPage.java:70)
+com.solvd.gsm.tests.GsmTests.verifyWelcomeMessageSignUp(GsmTests.java:28)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+java.base/java.lang.Thread.run(Thread.java:834)

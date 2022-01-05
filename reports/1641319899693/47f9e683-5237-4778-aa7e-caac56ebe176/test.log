@@ -1,0 +1,2 @@
+[2022-01-04 03:13:22] [TestRunRegistrar.java] [16] [WARN] Reporting disabled: using no op test run registrar
+[2022-01-04 03:13:22] [IMessager.java] [16] [INFO] TEST [gsm [row=] - verifyWelcomeMessageSignUp [L0003]] STARTED at [15:13:22 2022-01-04]

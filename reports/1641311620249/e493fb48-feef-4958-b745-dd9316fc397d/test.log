@@ -1,0 +1,6 @@
+[2022-01-04 12:54:12] [IMessager.java] [28] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2022-01-04 12:54:43] [DriverListener.java] [28] [INFO] URL 'https://www.gsmarena.com' opened
+[2022-01-04 12:54:43] [Screenshot.java] [28] [ERROR] ExecutionException error on capture screenshot: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'solvds-MacBook-Pro.local', ip: 'fe80:0:0:0:c4e:6ec0:76be:bc70%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.1', java.version: '11.0.13'
+Driver info: driver.version: RemoteWebDriver

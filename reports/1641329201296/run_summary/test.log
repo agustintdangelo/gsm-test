@@ -1,0 +1,2 @@
+[2022-01-04 05:46:42] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-01-04 05:46:42] [IMessager.java] [1] [INFO] RESULT #1: TEST [gsm - verifyEmptyEmailNotAllowed] FAIL [log=file:///Users/solvd/gsm/./reports/1641329201296/303c7c08-9e10-47a5-8475-ff0e98ca8f98/test.log]

@@ -1,0 +1,9 @@
+[2022-01-05 01:55:52] [IMessager.java] [62] [INFO] INFO: opening url 'https://www.gsmarena.com'
+[2022-01-05 01:55:56] [DriverListener.java] [62] [INFO] URL 'https://www.gsmarena.com' opened
+[2022-01-05 01:55:56] [Screenshot.java] [62] [ERROR] ExecutionException error on capture screenshot: org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'solvds-MacBook-Pro.local', ip: 'fe80:0:0:0:c4e:6ec0:76be:bc70%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.1', java.version: '11.0.13'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/cb/_cgn98l156b...}, goog:chromeOptions: {debuggerAddress: localhost:54189}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ea0733a32d7cec236cf64699962d3a09
